@@ -94,6 +94,8 @@ Add the server configuration to your `mcp.json` file:
   }
 }
 ```
+## Demo Video
+[Demo Video (MP4)](demo/vscode/otthelper-video.mp4)
 
 ## Available Tools
 
@@ -108,9 +110,6 @@ Get recommendations filtered by platform and minimum IMDB rating.
 **Example:**
 > Get me action movies on Netflix with rating >= 8
 
-## Demo Video
-[Demo Video (MP4)](demo/vscode/otthelper-video.mp4)
-
 ### 2. `get_recommendations_by_genre_and_rating`
 Get recommendations filtered by genre and minimum IMDB rating.
 
@@ -118,6 +117,9 @@ Get recommendations filtered by genre and minimum IMDB rating.
 - `genre` (required): Genre of content
 - `minRating` (required): Minimum IMDB rating (0-10)
 - `contentType` (optional): "movie", "series", or "both"
+
+**Example:**
+> Get me drama movies with rating >= 8
 
 ### 3. `get_recommendations_by_criteria`
 Get recommendations filtered by platform, genre, and rating simultaneously.
@@ -128,12 +130,18 @@ Get recommendations filtered by platform, genre, and rating simultaneously.
 - `minRating` (required): Minimum rating
 - `contentType` (optional): "movie" or "series"
 
+**Example:**
+> Get me sci-fi series on Netflix with rating >= 8
+
 ### 4. `get_all_content_on_platform`
 Get all available content on a specific platform.
 
 **Parameters:**
 - `platform` (required): OTT platform
 - `sortByRating` (optional): Sort by rating (default: true)
+
+**Example:**
+> Get all content available on Prime Video
 
 ### 5. `get_top_rated_content`
 Get the highest-rated OTT content.
@@ -143,6 +151,9 @@ Get the highest-rated OTT content.
 - `genre` (optional): Filter by genre
 - `contentType` (optional): "movie" or "series"
 
+**Example:**
+> Get the top 5 rated movies
+
 ### 6. `search_content_by_title`
 Search for content by title.
 
@@ -150,14 +161,23 @@ Search for content by title.
 - `title` (required): Title or partial title
 - `exactMatch` (optional): Require exact match (default: false)
 
+**Example:**
+> Search for "Breaking Bad"
+
 ### 7. `get_available_filters`
 Get all available platforms and genres for filtering.
+
+**Example:**
+> What are the available filters?
 
 ### 8. `get_content_details`
 Get detailed information about specific content.
 
 **Parameters:**
 - `title` (required): Title of the content
+
+**Example:**
+> Get details about "Inception"
 
 ## Architecture
 
