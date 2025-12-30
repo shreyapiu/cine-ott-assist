@@ -1,0 +1,32 @@
+{
+  "name": "ott-helper-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for OTT recommendations based on IMDB ratings, platform, and genre",
+  "type": "module",
+  "bin": {
+    "ott-helper": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node build/index.js"
+  },
+  "files": ["build"],
+  "keywords": [
+    "mcp",
+    "ott",
+    "netflix",
+    "prime",
+    "recommendations"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "zod": "^3"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5"
+  }
+}
