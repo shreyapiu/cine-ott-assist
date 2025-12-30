@@ -22,6 +22,8 @@ A Model Context Protocol (MCP) server that provides intelligent OTT (Over-The-To
 - Apple TV+
 - Hulu
 - Disney+
+- Zee5
+- JioCinema
 
 ## Available Genres
 
@@ -39,6 +41,7 @@ A Model Context Protocol (MCP) server that provides intelligent OTT (Over-The-To
 - History
 - Biography
 - Animation
+- Documentary
 
 ## Installation
 
