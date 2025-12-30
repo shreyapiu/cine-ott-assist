@@ -16,8 +16,8 @@ server.registerTool(
     description: "Get OTT recommendations filtered by platform and minimum IMDB rating",
     inputSchema: {
       platform: z
-        .enum(["netflix", "prime", "hotstar", "sony", "peacock", "apple", "hulu", "disney+"] as const)
-        .describe("OTT platform name (netflix, prime, hotstar, sony, peacock, apple, hulu, disney+)"),
+        .enum(["netflix", "prime", "hotstar", "sony", "peacock", "apple", "hulu", "disney+", "zee5","jiocinema"] as const)
+        .describe("OTT platform name (netflix, prime, hotstar, sony, peacock, apple, hulu, disney+, zee5, jiocinema)"),
       minRating: z
         .number()
         .min(0)
@@ -89,6 +89,7 @@ server.registerTool(
           "history",
           "biography",
           "animation",
+          "documentary",
         ] as const)
         .describe("Genre of content"),
       minRating: z
@@ -150,7 +151,7 @@ server.registerTool(
       "Get OTT recommendations filtered by platform, genre, and minimum IMDB rating",
     inputSchema: {
       platform: z
-        .enum(["netflix", "prime", "hotstar", "sony", "peacock", "apple", "hulu", "disney+"] as const)
+        .enum(["netflix", "prime", "hotstar", "sony", "peacock", "apple", "hulu", "disney+", "zee5","jiocinema"] as const)
         .describe("OTT platform name"),
       genre: z
         .enum([
@@ -168,6 +169,7 @@ server.registerTool(
           "history",
           "biography",
           "animation",
+          "documentary",
         ] as const)
         .describe("Genre of content"),
       minRating: z
@@ -229,7 +231,7 @@ server.registerTool(
     description: "Get all available content on a specific platform",
     inputSchema: {
       platform: z
-        .enum(["netflix", "prime", "hotstar", "sony", "peacock", "apple", "hulu", "disney+"] as const)
+        .enum(["netflix", "prime", "hotstar", "sony", "peacock", "apple", "hulu", "disney+", "zee5", "jiocinema"] as const)
         .describe("OTT platform name"),
       sortByRating: z
         .boolean()
@@ -303,6 +305,7 @@ server.registerTool(
           "history",
           "biography",
           "animation",
+          "documentary",
         ] as const)
         .optional()
         .describe("Filter by specific genre (optional)"),

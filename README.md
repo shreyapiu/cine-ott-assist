@@ -108,6 +108,9 @@ Get recommendations filtered by platform and minimum IMDB rating.
 **Example:**
 > Get me action movies on Netflix with rating >= 8
 
+## Demo Video
+[Demo Video (MP4)](demo/vscode/otthelper-video.mp4)
+
 ### 2. `get_recommendations_by_genre_and_rating`
 Get recommendations filtered by genre and minimum IMDB rating.
 
